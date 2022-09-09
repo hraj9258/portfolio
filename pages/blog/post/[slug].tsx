@@ -72,7 +72,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
         // .filter((translation) => context.locales.indexOf(translation.language) > -1)
         .map((translation) => ({
           params: { slug: translation.slug },
-          locale: translation.language,
+          // locale: translation.language,
         }))
     )
     .flat()

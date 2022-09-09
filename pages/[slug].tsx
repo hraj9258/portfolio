@@ -69,7 +69,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
         // )
         .map((translation) => ({
           params: { slug: translation.slug },
-          locale: translation.language,
+          // locale: translation.language,
         }))
     )
     .flat()
